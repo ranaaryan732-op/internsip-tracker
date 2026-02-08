@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Placement / Internship Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Smart Placement / Internship Tracker</h1>
+</header>
+
+<section class="form-section">
+    <h2>Add Application</h2>
+    <form id="applicationForm">
+        <input type="text" id="company" placeholder="Company Name" required>
+        <input type="text" id="role" placeholder="Role / Position" required>
+
+        <select id="stage" required>
+            <option value="">Select Stage</option>
+            <option>Applied</option>
+            <option>Online Assessment</option>
+            <option>Interview</option>
+            <option>Offer</option>
+            <option>Rejected</option>
+        </select>
+
+        <select id="result" required>
+            <option value="">Select Result</option>
+            <option>Pending</option>
+            <option>Cleared</option>
+            <option>Rejected</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <button type="submit">Add Application</button>
+    </form>
+</section>
+
+<section class="list-section">
+    <h2>Applications List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Stage</th>
+                <th>Result</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="applicationList"></tbody>
+    </table>
+</section>
+
+<section class="summary-section">
+    <h2>Summary</h2>
+    <div class="summary-box">
+        <p>Total Applications: <span id="total">0</span></p>
+        <p>Interviews: <span id="interviews">0</span></p>
+        <p>Offers: <span id="offers">0</span></p>
+        <p>Rejections: <span id="rejections">0</span></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
