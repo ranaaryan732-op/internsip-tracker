@@ -1,0 +1,1 @@
+This is a simple and interactive Expense Tracker web application built using HTML, CSS, and JavaScript. It allows users to add and delete expenses dynamically, view the total amount in real time, and enjoy smooth animations with a clean, customizable UI theme. The project focuses on user-friendly design, responsive layout, and basic DOM manipulation.
